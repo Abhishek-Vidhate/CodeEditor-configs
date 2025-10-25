@@ -1,4 +1,4 @@
-# My current Neovim and Ghostty terminal configurations
+# My current Neovim and Ghostty terminal configurations for Solana Program development ( anchor, rust )
 
 basically used tokyo night preset from starship prompt , and Lazyvim for Neovim config management.
 
