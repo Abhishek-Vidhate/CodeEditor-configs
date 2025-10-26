@@ -30,3 +30,12 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
   desc = "Disable single quote pairing in Rust for lifetimes",
 })
+
+-- Disable auto-commenting on new lines for all file types
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    vim.opt_local.formatoptions:remove({ "c", "r", "o" })
+  end,
+  desc = "Disable auto-comment on new line",
+})
