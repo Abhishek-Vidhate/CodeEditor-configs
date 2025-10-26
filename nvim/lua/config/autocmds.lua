@@ -20,3 +20,13 @@ vim.api.nvim_create_autocmd("CursorHold", {
     vim.diagnostic.open_float(nil, opts)
   end,
 })
+
+-- Disable single quote auto-pairing for Rust (lifetimes)
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "rust",
+  group = vim.api.nvim_create_augroup("rust_disable_single_quote", { clear = true }),
+  callback = function()
+    vim.keymap.set("i", "'", "'", { buffer = 0 })
+  end,
+  desc = "Disable single quote pairing in Rust for lifetimes",
+})
