@@ -1,12 +1,12 @@
 # My current Neovim and Ghostty terminal configurations for Solana Program development ( anchor, rust )
 
-basically used tokyo night preset from starship prompt , and Lazyvim for Neovim config management.
+Correct setup for anchor-lang's macro error ( LSP misunderstand of a feature as error resolved) and simple rust programming setup
 
-i only know somewhat of Rust development so have only added Rust plugins and LSP for simple and clean development. and this just works so i am happay for now.
+[NOTE]
+AI tools are disabled in this setup
 
-NOTE :
-
-you'll have to add starship prompt to path ( in .zshrc or .zprofile) .
+[OPTIONAL]
+for starship; you'll have to add starship prompt to path ( in .zshrc or .zprofile) .
 
 check installation guide for both neovim and starship prompts , easy to install , just follow 
 
